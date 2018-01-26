@@ -1,4 +1,7 @@
-# adminviu
+[![Maintainability](https://api.codeclimate.com/v1/badges/3d74b3aa1db1375c1467/maintainability)](https://codeclimate.com/github/amadeu01/adminviu/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3d74b3aa1db1375c1467/test_coverage)](https://codeclimate.com/github/amadeu01/adminviu/test_coverage)
+[![Build Status](https://travis-ci.org/amadeu01/adminviu.svg?branch=master)](https://travis-ci.org/amadeu01/adminviu)
+# Admin Viu
 
 > Admin your data in any project.
 
@@ -26,3 +29,6 @@ npm run e2e
 # run all tests
 npm test
 ```
+
+
+`Pronto`
