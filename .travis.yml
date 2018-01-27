@@ -2,14 +2,9 @@ language: node_js
 
 node_js:
   - 8.2.1
-
+dist: trusty
 addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
-
+  chrome: stable
 before_script:
   - yarn global add nyc
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -17,7 +12,7 @@ before_script:
   - ./cc-test-reporter before-build
 
 script:
-  - nyc yarn run unit
+  - nyc --reporter=lcov --reporter=text-lcov yarn run unit
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
